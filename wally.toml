@@ -1,5 +1,5 @@
 [package]
-name = "joseph/joker's-realm"
+name = "joseph/jokers-realm"
 version = "0.1.0"
 registry = "https://github.com/UpliftGames/wally-index"
 realm = "shared"
