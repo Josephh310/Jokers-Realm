@@ -15,13 +15,18 @@ end
 
 function MoneyController:KnitStart()
 	print("MoneyController started")
+
+	local function ObserveMoney(money)
+		print("My money: ", money)
+	end
+
 	--Load the exposed functions from the money service on the server
 	local MoneyService = Knit.GetService("MoneyService")
-	MoneyService:GetMoney()
-		:andThen(function(money)
-			print("My money:", money)
-		end)
-		:catch(warn)
+
+	--Fetch the player's current saved money to updat
+	MoneyService:GetMoney():andThen(ObserveMoney)
+	--Observe the money changed going forewards
+	MoneyService.MoneyChanged:Connect(ObserveMoney)
 end
 
 return MoneyController
