@@ -10,3 +10,6 @@ Packages/
 ServerPackages/
 sourcemap.json
 wally.lock
+
+#MacOS files
+.DS_Store
