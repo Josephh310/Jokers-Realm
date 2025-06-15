@@ -2,9 +2,9 @@ local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local ServerStorage = game:GetService("ServerStorage")
 local Knit = require(ReplicatedStorage._Packages.Knit)
 
-for i, v in ipairs(ServerStorage._Source.Services:GetDescendants()) do
-	if v:IsA("ModuleScript") and v.Name:match(".service$") then
-		print(`Loading {string.split(v.Name, ".")} Service..`)
+for _, v in ipairs(ServerStorage._Source:GetDescendants()) do
+	if v:IsA("ModuleScript") and string.lower(v.Name):match(".service$") then
+		print(`Loading {string.split(v.Name, ".")[1]} Service..`)
 		require(v)
 	end
 end
