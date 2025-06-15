@@ -15,9 +15,6 @@
     "ServerScriptService": {
       "Server": {
         "$path": "src/server"
-      },
-      "ServerPackages": {
-        "$path": "ServerPackages"
       }
     },
 
@@ -26,6 +23,12 @@
         "Client": {
           "$path": "src/client"
         }
+      }
+    },
+
+    "ServerStorage": {
+      "Secrets": {
+        "$className": "Folder"
       }
     }
   }
