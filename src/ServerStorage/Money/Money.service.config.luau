@@ -1,0 +1,3 @@
+return {
+	DefaultMoney = 10,
+}
