@@ -4,7 +4,7 @@ local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Knit = require(ReplicatedStorage._Packages.Knit)
 
 --Read config
-local Config = require(script.Parent["Money.service.config"])
+local Config = require(ReplicatedStorage._Source.Modules["Money.service.config"])
 
 --Create a new money service using knit
 --This allows us to manage the service securely on the server while exposing limited functions to the player
