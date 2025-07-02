@@ -4,36 +4,31 @@
     "$className": "DataModel",
 
     "ReplicatedStorage": {
-      "_Source": {
-        "$path": "src/ReplicatedStorage"
-      },
-      "_Packages": {
+      "Packages": {
+        "$className": "Configuration",
         "$path": "Packages"
-      }
+      },
+      "$path": "src/ReplicatedStorage"
     },
 
     "ServerScriptService": {
-      "_Source": {
-        "$className": "Folder",
         "$path": "src/ServerScriptService"
-      }
     },
 
     "StarterPlayer": {
       "StarterPlayerScripts": {
-        "_Source": {
-          "$className": "Folder",
-          "$path": "src/StarterPlayerScripts"
-        }
+        "$path": "src/StarterPlayerScripts"
       }
     },
 
     "ServerStorage": {
-      "_Secrets": {
-        "$className": "Folder"
+      "$path": "src/ServerStorage",
+      "Secrets": {
+        "$className": "Configuration"
       },
-      "_Source": {
-        "$path": "src/ServerStorage"
+      "ServerPackages": {
+        "$className": "Configuration",
+        "$path": "ServerPackages"
       }
     }
   }
