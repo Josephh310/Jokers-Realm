@@ -24,7 +24,7 @@
     "ServerStorage": {
       "$path": "src/ServerStorage",
       "Secrets": {
-        "$className": "Configuration"
+        "$className": "Folder"
       },
       "ServerPackages": {
         "$className": "Configuration",

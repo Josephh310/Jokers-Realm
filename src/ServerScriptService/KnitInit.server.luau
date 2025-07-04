@@ -1,11 +1,12 @@
---[[
---Filename: /Users/joseph/Documents/Roblox Projects/Joker's Realm/src/ServerScriptService/KnitInit.server.luau
---Path: /Users/joseph/Documents/Roblox Projects/Joker's Realm/src/ServerScriptService
---Created Date: Sunday, June 15th 2025, 3:36:45 pm
---Author: Joseph Hill
+-- Script Title: 'KnitInit.server'
+-- Created: Sun Jun 15 2025
+-- Author: Joseph Hill (@BreakLoop)
 --
---Copyright (c) 2025 BrainySpinach Maths
---]]
+-- Last Modified: Wed Jul 02 2025
+-- Modified By: Joseph Hill (@BreakLoop)
+--
+-- Copyright (c) 2025 BrainySpinach Maths
+
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local ServerStorage = game:GetService("ServerStorage")
 local Knit = require(ReplicatedStorage.Packages.Knit)
@@ -19,6 +20,6 @@ end
 
 Knit.Start()
 	:andThen(function()
-		print("Knit started on server!")
+		print("Knit started on server!!!!!")
 	end)
 	:catch(warn)
